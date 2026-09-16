@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC PAGE SETTINGS
+         ===================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sushil Zanwar | GRC & Risk Professional</title>
+
+    <meta
+        name="description"
+        content="Sushil Zanwar - CISA, ISO 27001 Lead Auditor and Certified DPDPA Professional."
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS FILE
+         ===================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =====================================================
+         CONTACT / WHATSAPP SECTION STYLES
+         These styles are included here so you don't have
+         to change style.css for these new elements.
+         ===================================================== -->
+
+    <style>
+
+        /* =================================================
+           NEW RIGHT-SIDE PROFESSIONAL CONNECT PANEL
+           ================================================= */
+
+        .connect-panel {
+
+            background: #eef1f7;
+
+            min-height: 100%;
+
+            display: flex;
+            align-items: center;
+
+            padding: 70px 65px;
+
+        }
+
+
+        .connect-content {
+
+            width: 100%;
+            max-width: 580px;
+
+        }
+
+
+        .connect-content h2 {
+
+            margin: 0;
+
+            font-family: "DM Sans", sans-serif;
+
+            font-size: clamp(32px, 4vw, 52px);
+
+            font-weight: 500;
+
+            letter-spacing: 1px;
+
+            color: #17263b;
+
+        }
+
+
+        .connect-content .red-line {
+
+            width: 60px;
+
+            height: 7px;
+
+            background: #ff3654;
+
+            margin-top: 24px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .connect-intro {
+
+            color: #34445a;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            margin: 0 0 35px 0;
+
+            max-width: 520px;
+
+        }
+
+
+        /* =================================================
+           PROFESSIONAL SERVICES
+           ================================================= */
+
+        .connect-services {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 16px;
+
+            margin-bottom: 35px;
+
+        }
+
+
+        .connect-service {
+
+            background: #ffffff;
+
+            border: 1px solid rgba(20, 40, 65, 0.10);
+
+            padding: 20px 18px;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .connect-service:hover {
+
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.10);
+
+        }
+
+
+        .connect-service span {
+
+            display: block;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            color: #ff3654;
+
+            margin-bottom: 9px;
+
+        }
+
+
+        .connect-service strong {
+
+            display: block;
+
+            color: #17263b;
+
+            font-size: 15px;
+
+            line-height: 1.45;
+
+        }
+
+
+        /* =================================================
+           WHATSAPP CTA
+           ================================================= */
+
+        .connect-question {
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            color: #17263b;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .connect-whatsapp {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            background: #25D366;
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            padding: 15px 25px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.8px;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .connect-whatsapp:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(37, 211, 102, 0.30);
+
+        }
+
+
+        .connect-whatsapp svg {
+
+            width: 22px;
+            height: 22px;
+
+        }
+
+
+        /* =================================================
+           LINKEDIN BUTTON
+           ================================================= */
+
+        .connect-linkedin {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            margin-left: 10px;
+
+            padding: 14px 23px;
+
+            border: 1px solid #17263b;
+
+            color: #17263b;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.8px;
+
+            transition:
+                background 0.3s ease,
+                color 0.3s ease;
+
+        }
+
+
+        .connect-linkedin:hover {
+
+            background: #17263b;
+
+            color: #ffffff;
+
+        }
+
+
+        /* =================================================
+           FLOATING WHATSAPP BUTTON
+           ================================================= */
+
+        .whatsapp-float {
+
+            position: fixed;
+
+            right: 28px;
+            bottom: 28px;
+
+            width: 68px;
+            height: 68px;
+
+            background: #25D366;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+
+            box-shadow:
+                0 8px 28px rgba(0, 0, 0, 0.28);
+
+            z-index: 9999;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .whatsapp-float svg {
+
+            width: 39px;
+            height: 39px;
+
+        }
+
+
+        .whatsapp-float:hover {
+
+            transform: translateY(-6px) scale(1.08);
+
+            box-shadow:
+                0 14px 35px rgba(0, 0, 0, 0.34);
+
+        }
+
+
+        /* =================================================
+           FLOATING WHATSAPP LABEL
+           ================================================= */
+
+        .whatsapp-label {
+
+            position: fixed;
+
+            right: 110px;
+            bottom: 48px;
+
+            background: #111827;
+
+            color: #ffffff;
+
+            padding: 10px 15px;
+
+            border-radius: 5px;
+
+            font-family: "DM Sans", sans-serif;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            transform: translateX(10px);
+
+            transition:
+                opacity 0.3s ease,
+                transform 0.3s ease;
+
+            z-index: 9998;
+
+        }
+
+
+        .whatsapp-float:hover + .whatsapp-label {
+
+            opacity: 1;
+
+            transform: translateX(0);
+
+        }
+
+
+        /* =================================================
+           CONTACT SECTION LAYOUT
+           ================================================= */
+
+        .contact-section {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+
+        .quick-id,
+        .connect-panel {
+
+            min-width: 0;
+
+        }
+
+
+        /* =================================================
+           TABLET
+           ================================================= */
+
+        @media (max-width: 900px) {
+
+            .contact-section {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .connect-panel {
+
+                padding: 55px 40px;
+
+            }
+
+        }
+
+
+        /* =================================================
+           MOBILE
+           ================================================= */
+
+        @media (max-width: 600px) {
+
+            .connect-panel {
+
+                padding: 45px 25px;
+
+            }
+
+
+            .connect-services {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .connect-linkedin {
+
+                margin-left: 0;
+
+                margin-top: 10px;
+
+            }
+
+
+            .whatsapp-float {
+
+                right: 18px;
+
+                bottom: 18px;
+
+                width: 60px;
+
+                height: 60px;
+
+            }
+
+
+            .whatsapp-float svg {
+
+                width: 34px;
+
+                height: 34px;
+
+            }
+
+
+            .whatsapp-label {
+
+                display: none;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER / NAVIGATION
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="navbar">
+
+
+            <!-- Logo -->
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                SZ.
+            </a>
+
+
+            <!-- Desktop navigation -->
+
+            <nav class="nav-links">
+
+                <a href="#home">
+                    HOME
+                </a>
+
+                <a href="#about">
+                    ABOUT
+                </a>
+
+                <a href="#expertise">
+                    EXPERTISE
+                </a>
+
+                <a href="#experience">
+                    EXPERIENCE
+                </a>
+
+                <a href="#credentials">
+                    CREDENTIALS
+                </a>
+
+                <a href="#leadership">
+                    LEADERSHIP
+                </a>
+
+                <a href="#contact">
+                    CONTACT
+                </a>
+
+            </nav>
+
+
+            <!-- Resume button -->
+
+            <a
+                href="Sushil Zanwar - Profile_GRC.pdf"
+                class="nav-resume"
+                target="_blank"
+            >
+                DOWNLOAD MY FULL RESUME
+            </a>
+
+
+            <!-- Mobile menu button -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open navigation menu"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO SECTION
+         ===================================================== -->
+
+    <section
+        id="home"
+        class="hero-section"
+    >
+
+
+        <!-- Background overlay -->
+
+        <div class="hero-overlay"></div>
+
+
+        <!-- Hero top -->
+
+        <div class="hero-top">
+
+            <a
+                href="#home"
+                class="hero-home"
+            >
+                HOME
+            </a>
+
+
+            <a
+                href="Sushil Zanwar - Profile_GRC.pdf"
+                class="hero-resume"
+                target="_blank"
+            >
+                DOWNLOAD MY FULL RESUME
+            </a>
+
+        </div>
+
+
+        <!-- Main hero content -->
+
+        <div class="hero-content">
+
+            <p class="hero-kicker">
+                GOVERNANCE • RISK • COMPLIANCE
+            </p>
+
+
+            <h1>
+                Sushil Zanwar
+            </h1>
+
+
+            <p class="hero-title">
+                GRC &amp; RISK PROFESSIONAL
+            </p>
+
+        </div>
+
+
+        <!-- Profile image placeholder -->
+
+        <div class="profile-photo">
+
+            <div class="profile-initials">
+                SZ
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT SECTION
+         ===================================================== -->
+
+    <section
+        id="about"
+        class="light-section about-section"
+    >
+
+        <div class="content-wrapper">
+
+
+            <!-- Section heading -->
+
+            <div class="section-heading-row">
+
+                <div>
+
+                    <h2>
+                        ABOUT ME
+                    </h2>
+
+                    <div class="red-line"></div>
+
+                </div>
+
+
+                <a
+                    href="Sushil Zanwar - Profile_GRC.pdf"
+                    class="outline-button"
+                    target="_blank"
+                >
+                    DOWNLOAD MY FULL RESUME
+                </a>
+
+            </div>
+
+
+            <!-- Social links -->
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.linkedin.com/in/sushilzanwar"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                >
+                    in
+                </a>
+
+
+                <a
+                    href="mailto:sushil.zanwar@gmail.com"
+                    aria-label="Email"
+                >
+                    @
+                </a>
+
+
+                <a
+                    href="tel:+918806633133"
+                    aria-label="Phone"
+                >
+                    ☎
+                </a>
+
+            </div>
+
+
+            <!-- About text -->
+
+            <div class="about-grid">
+
+
+                <div class="about-column">
+
+                    <p>
+                        Strategic Governance, Risk &amp; Compliance (GRC)
+                        Leader with 18+ years of experience across Banking,
+                        BFSI, Technology, Telecom, and Digital Services.
+                    </p>
+
+                </div>
+
+
+                <div class="about-column">
+
+                    <p>
+                        Proven experience across Enterprise Risk Management,
+                        information security governance, regulatory compliance,
+                        data privacy, technology audit, third-party risk
+                        management, and emerging AI governance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXPERTISE SECTION
+         ===================================================== -->
+
+    <section
+        id="expertise"
+        class="image-section expertise-section"
+    >
+
+        <div class="image-section-overlay"></div>
+
+
+        <div class="content-wrapper section-relative">
+
+
+            <!-- Heading -->
+
+            <div class="section-heading-row white-heading">
+
+                <div>
+
+                    <h2>
+                        EXPERTISE
+                    </h2>
+
+                    <div class="red-line"></div>
+
+                </div>
+
+
+                <a
+                    href="Sushil Zanwar - Profile_GRC.pdf"
+                    class="outline-button light-button"
+                    target="_blank"
+                >
+                    DOWNLOAD MY FULL RESUME
+                </a>
+
+            </div>
+
+
+            <!-- Expertise cards -->
+
+            <div class="expertise-grid">
+
+
+                <!-- Card 01 -->
+
+                <article class="expertise-card">
+
+                    <span class="card-number">
+                        01
+                    </span>
+
+
+                    <h3>
+                        GRC LEADERSHIP &amp; ERM
+                    </h3>
+
+
+                    <p>
+                        Enterprise Risk Management, Information Security
+                        Governance, risk frameworks and organizational
+                        policies.
+                    </p>
+
+                </article>
+
+
+                <!-- Card 02 -->
+
+                <article class="expertise-card">
+
+                    <span class="card-number">
+                        02
+                    </span>
+
+
+                    <h3>
+                        REGULATORY &amp; DATA PRIVACY
+                    </h3>
+
+
+                    <p>
+                        DPDPA 2023, GDPR, technology audits, privacy
+                        implementation and regulatory compliance.
+                    </p>
+
+                </article>
+
+
+                <!-- Card 03 -->
+
+                <article class="expertise-card">
+
+                    <span class="card-number">
+                        03
+                    </span>
+
+
+                    <h3>
+                        AI GOVERNANCE
+                    </h3>
+
+
+                    <p>
+                        AI Management Systems, ISO/IEC 42001, model risk,
+                        explainability, ethics and AI security governance.
+                    </p>
+
+                </article>
+
+
+                <!-- Card 04 -->
+
+                <article class="expertise-card">
+
+                    <span class="card-number">
+                        04
+                    </span>
+
+
+                    <h3>
+                        AUDIT &amp; RISK ASSURANCE
+                    </h3>
+
+
+                    <p>
+                        IT and cybersecurity audits, third-party risk
+                        management and controls assurance.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXPERIENCE SECTION
+         ===================================================== -->
+
+    <section
+        id="experience"
+        class="light-section experience-section"
+    >
+
+        <div class="content-wrapper">
+
+
+            <!-- Heading -->
+
+            <div class="section-heading-row">
+
+                <div>
+
+                    <h2>
+                        EXPERIENCE
+                    </h2>
+
+                    <div class="red-line"></div>
+
+                </div>
+
+
+                <a
+                    href="Sushil Zanwar - Profile_GRC.pdf"
+                    class="outline-button"
+                    target="_blank"
+                >
+                    DOWNLOAD MY FULL RESUME
+                </a>
+
+            </div>
+
+
+            <!-- Experience timeline -->
+
+            <div class="experience-wrapper">
+
+                <div class="timeline-line"></div>
+
+
+                <article class="experience-item">
+
+                    <div class="timeline-dot"></div>
+
+
+                    <div class="experience-date">
+                        CURRENT
+                    </div>
+
+
+                    <div class="experience-content">
+
+
+                        <h3>
+                            Senior Lead Auditor – Internal Audit
+                        </h3>
+
+
+                        <h4>
+                            ION Group
+                        </h4>
+
+
+                        <p>
+                            Lead strategic risk advisory, DPDPA and privacy
+                            compliance initiatives, technology assurance and
+                            governance activities.
+                        </p>
+
+
+                        <p>
+                            Spearhead AI Security &amp; Governance Audits,
+                            evaluating model lifecycles, explainability,
+                            risk management and ISO/IEC 42001 alignment.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CREDENTIALS / CERTIFICATIONS
+         ===================================================== -->
+
+    <section
+        id="credentials"
+        class="credentials-section"
+    >
+
+        <div class="content-wrapper">
+
+
+            <!-- Heading -->
+
+            <div class="section-heading-row white-heading">
+
+                <div>
+
+                    <h2>
+                        CREDENTIALS
+                    </h2>
+
+                    <div class="red-line"></div>
+
+                </div>
+
+
+                <a
+                    href="Sushil Zanwar - Profile_GRC.pdf"
+                    class="outline-button light-button"
+                    target="_blank"
+                >
+                    DOWNLOAD MY FULL RESUME
+                </a>
+
+            </div>
+
+
+            <!-- Credentials -->
+
+            <div class="credential-list">
+
+
+                <!-- Credential 01 -->
+
+                <article class="credential-item">
+
+                    <div class="credential-number">
+                        01
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Certified Information Systems Auditor
+                        </h3>
+
+
+                        <p>
+                            CISA — ISACA
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Credential 02 -->
+
+                <article class="credential-item">
+
+                    <div class="credential-number">
+                        02
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            ISO/IEC 27001:2022 Lead Auditor
+                        </h3>
+
+
+                        <p>
+                            Certified Lead Auditor
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Credential 03 -->
+
+                <article class="credential-item">
+
+                    <div class="credential-number">
+                        03
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Certified DPDPA Professional
+                        </h3>
+
+
+                        <p>
+                            Digital Personal Data Protection Act, 2023 —
+                            94% score
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Credential 04 -->
+
+                <article class="credential-item">
+
+                    <div class="credential-number">
+                        04
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Advanced AI Auditing
+                        </h3>
+
+
+                        <p>
+                            AAIA Training — ISACA
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Credential 05 -->
+
+                <article class="credential-item">
+
+                    <div class="credential-number">
+                        05
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Emerging Leader – Compliance and Risk Pioneer
+                        </h3>
+
+
+                        <p>
+                            CXO Junction — Excellence in Audit &amp;
+                            Regulatory Compliance
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         THOUGHT LEADERSHIP SECTION
+         ===================================================== -->
+
+    <section
+        id="leadership"
+        class="image-section leadership-section"
+    >
+
+        <div class="image-section-overlay"></div>
+
+
+        <div class="content-wrapper section-relative">
+
+
+            <!-- Heading -->
+
+            <div class="section-heading-row white-heading">
+
+                <div>
+
+                    <h2>
+                        THOUGHT LEADERSHIP
+                    </h2>
+
+                    <div class="red-line"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Leadership cards -->
+
+            <div class="leadership-grid">
+
+
+                <!-- Leadership 01 -->
+
+                <article class="leadership-card">
+
+                    <span>
+                        DATA PRIVACY &amp; DPDPA
+                    </span>
+
+
+                    <h3>
+                        Privacy Implementation Programs
+                    </h3>
+
+
+                    <p>
+                        Conducted data privacy and DPDPA implementation
+                        programs for Kotak Mahindra Bank.
+                    </p>
+
+                </article>
+
+
+                <!-- Leadership 02 -->
+
+                <article class="leadership-card">
+
+                    <span>
+                        CYBERSECURITY AWARENESS
+                    </span>
+
+
+                    <h3>
+                        Cybersecurity Awareness Sessions
+                    </h3>
+
+
+                    <p>
+                        Led cybersecurity awareness sessions for Mahesh
+                        Sahakari Bank Ltd. and Mahesh Professional Forum.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         QUICK ID + LET'S CONNECT SECTION
+         
+         The old CONTACT ME form has been completely removed.
+         The right side now contains a professional connection
+         panel.
+         ===================================================== -->
+
+    <section
+        id="contact"
+        class="contact-section"
+    >
+
+
+        <!-- =================================================
+             LEFT SIDE — QUICK ID
+             ================================================= -->
+
+        <div class="quick-id">
+
+            <div class="contact-inner">
+
+
+                <h2>
+                    QUICK ID
+                </h2>
+
+
+                <div class="red-line"></div>
+
+
+                <div class="quick-details">
+
+
+                    <!-- Phone -->
+
+                    <div class="quick-row">
+
+                        <strong>
+                            Phone
+                        </strong>
+
+
+                        <a href="tel:+918806633133">
+                            +91 8806633133
+                        </a>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="quick-row">
+
+                        <strong>
+                            Email
+                        </strong>
+
+
+                        <a href="mailto:sushil.zanwar@gmail.com">
+                            sushil.zanwar@gmail.com
+                        </a>
+
+                    </div>
+
+
+                    <!-- LinkedIn -->
+
+                    <div class="quick-row">
+
+                        <strong>
+                            LinkedIn
+                        </strong>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/sushilzanwar"
+                            target="_blank"
+                        >
+                            linkedin.com/in/sushilzanwar
+                        </a>
+
+                    </div>
+
+
+                    <!-- Profile -->
+
+                    <div class="quick-row">
+
+                        <strong>
+                            Profile
+                        </strong>
+
+
+                        <span>
+                            GRC • Risk • Audit • Privacy • AI Governance
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RIGHT SIDE — LET'S CONNECT
+             ================================================= -->
+
+        <div class="connect-panel">
+
+            <div class="connect-content">
+
+
+                <!-- Main heading -->
+
+                <h2>
+                    LET'S CONNECT
+                </h2>
+
+
+                <div class="red-line"></div>
+
+
+                <!-- Introduction -->
+
+                <p class="connect-intro">
+
+                    Looking to discuss Governance, Risk &amp; Compliance,
+                    Information Security, Data Privacy, Technology Audit
+                    or AI Governance?
+
+                    I am open to professional conversations,
+                    collaborations and consulting opportunities.
+
+                </p>
+
+
+                <!-- =================================================
+                     PROFESSIONAL AREAS
+                     ================================================= -->
+
+                <div class="connect-services">
+
+
+                    <!-- Service 01 -->
+
+                    <div class="connect-service">
+
+                        <span>
+                            01
+                        </span>
+
+                        <strong>
+                            GRC &amp; Risk Advisory
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Service 02 -->
+
+                    <div class="connect-service">
+
+                        <span>
+                            02
+                        </span>
+
+                        <strong>
+                            Technology &amp; Cybersecurity Audit
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Service 03 -->
+
+                    <div class="connect-service">
+
+                        <span>
+                            03
+                        </span>
+
+                        <strong>
+                            Data Privacy &amp; DPDPA
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Service 04 -->
+
+                    <div class="connect-service">
+
+                        <span>
+                            04
+                        </span>
+
+                        <strong>
+                            AI Governance &amp; Security
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTACT ACTIONS
+                     ================================================= -->
+
+                <p class="connect-question">
+                    Have a professional query?
+                </p>
+
+
+                <!-- WhatsApp button -->
+
+                <a
+                    href="https://wa.me/918806633133?text=Hello%20there%2C%20I%20have%20a%20query%20about%20some%20work."
+                    class="connect-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <!-- Actual WhatsApp logo -->
+
+                    <svg
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            fill="#ffffff"
+                            d="M16 2.7C8.67 2.7 2.7 8.67 2.7 16c0 2.34.61 4.54 1.68 6.45L2.6 29.4l7.1-1.86A13.24 13.24 0 0 0 16 29.3c7.33 0 13.3-5.97 13.3-13.3S23.33 2.7 16 2.7Zm0 24.15c-2.1 0-4.08-.57-5.78-1.56l-.41-.24-4.21 1.1 1.12-4.1-.27-.43A10.97 10.97 0 1 1 16 26.85Z"
+                        />
+
+
+                        <path
+                            fill="#ffffff"
+                            d="M21.4 17.9c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.77.36-.26.29-1 1-1 2.44s1.02 2.83 1.16 3.02c.14.19 2 3.05 4.84 4.28.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.34Z"
+                        />
+
+                    </svg>
+
+
+                    CHAT ON WHATSAPP
+
+                </a>
+
+
+                <!-- LinkedIn button -->
+
+                <a
+                    href="https://www.linkedin.com/in/sushilzanwar"
+                    class="connect-linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    VIEW LINKEDIN
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FLOATING WHATSAPP BUTTON
+         
+         The button stays visible while scrolling.
+         It uses the actual WhatsApp-style SVG logo.
+         ===================================================== -->
+
+    <a
+        href="https://wa.me/918806633133?text=Hello%20there%2C%20I%20have%20a%20query%20about%20some%20work."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Sushil Zanwar on WhatsApp"
+        title="Chat on WhatsApp"
+    >
+
+
+        <!-- =================================================
+             ACTUAL WHATSAPP LOGO
+             ================================================= -->
+
+        <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+        >
+
+
+            <!-- WhatsApp outer speech bubble -->
+
+            <path
+                fill="#ffffff"
+                d="M16 2.7C8.67 2.7 2.7 8.67 2.7 16c0 2.34.61 4.54 1.68 6.45L2.6 29.4l7.1-1.86A13.24 13.24 0 0 0 16 29.3c7.33 0 13.3-5.97 13.3-13.3S23.33 2.7 16 2.7Zm0 24.15c-2.1 0-4.08-.57-5.78-1.56l-.41-.24-4.21 1.1 1.12-4.1-.27-.43A10.97 10.97 0 1 1 16 26.85Z"
+            />
+
+
+            <!-- WhatsApp telephone receiver inside logo -->
+
+            <path
+                fill="#ffffff"
+                d="M21.4 17.9c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.77.36-.26.29-1 1-1 2.44s1.02 2.83 1.16 3.02c.14.19 2 3.05 4.84 4.28.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.34Z"
+            />
+
+        </svg>
+
+    </a>
+
+
+    <!-- Floating button label -->
+
+    <div class="whatsapp-label">
+        Chat on WhatsApp
+    </div>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- Footer left -->
+
+            <div class="footer-left">
+
+
+                <a
+                    href="Sushil Zanwar - Profile_GRC.pdf"
+                    class="footer-resume"
+                    target="_blank"
+                >
+                    DOWNLOAD MY FULL RESUME
+                </a>
+
+
+                <p>
+
+                    ©
+                    <span id="currentYear"></span>
+                    Sushil Zanwar.
+                    All rights reserved.
+
+                </p>
+
+            </div>
+
+
+            <!-- Footer right -->
+
+            <div class="footer-right">
+
+
+                <div class="footer-social">
+
+
+                    <a
+                        href="https://www.linkedin.com/in/sushilzanwar"
+                        target="_blank"
+                    >
+                        in
+                    </a>
+
+
+                    <a
+                        href="mailto:sushil.zanwar@gmail.com"
+                    >
+                        @
+                    </a>
+
+
+                    <a
+                        href="tel:+918806633133"
+                    >
+                        ☎
+                    </a>
+
+                </div>
+
+
+                <p>
+                    Connect with me
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         EXISTING JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+
+    <!-- =====================================================
+         CURRENT YEAR
+         ===================================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function () {
+
+                const yearElement =
+                    document.getElementById("currentYear");
+
+
+                if (yearElement) {
+
+                    yearElement.textContent =
+                        new Date().getFullYear();
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
