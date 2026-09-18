@@ -1,1725 +1,1711 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <!-- =====================================================
-         BASIC PAGE SETTINGS
-         ===================================================== -->
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sushil Zanwar | GRC & Risk Professional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta
-        name="description"
-        content="Sushil Zanwar - CISA, ISO 27001 Lead Auditor and Certified DPDPA Professional."
-    >
+      name="description"
+      content="Sushil Ramchandra Zanwar - Governance, Risk & Assurance Leader"
+    />
 
+    <title>Sushil Zanwar | Governance, Risk & Assurance</title>
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <!-- =====================================================
-         GOOGLE FONTS
-         ===================================================== -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-
-    <!-- =====================================================
-         MAIN CSS FILE
-         ===================================================== -->
-
-    <link rel="stylesheet" href="style.css">
-
-
-    <!-- =====================================================
-         CONTACT / WHATSAPP SECTION STYLES
-         These styles are included here so you don't have
-         to change style.css for these new elements.
-         ===================================================== -->
-
-    <style>
-
-        /* =================================================
-           NEW RIGHT-SIDE PROFESSIONAL CONNECT PANEL
-           ================================================= */
-
-        .connect-panel {
-
-            background: #eef1f7;
-
-            min-height: 100%;
-
-            display: flex;
-            align-items: center;
-
-            padding: 70px 65px;
-
-        }
-
-
-        .connect-content {
-
-            width: 100%;
-            max-width: 580px;
-
-        }
-
-
-        .connect-content h2 {
-
-            margin: 0;
-
-            font-family: "DM Sans", sans-serif;
-
-            font-size: clamp(32px, 4vw, 52px);
-
-            font-weight: 500;
-
-            letter-spacing: 1px;
-
-            color: #17263b;
-
-        }
-
-
-        .connect-content .red-line {
-
-            width: 60px;
-
-            height: 7px;
-
-            background: #ff3654;
-
-            margin-top: 24px;
-
-            margin-bottom: 30px;
-
-        }
-
-
-        .connect-intro {
-
-            color: #34445a;
-
-            font-size: 17px;
-
-            line-height: 1.8;
-
-            margin: 0 0 35px 0;
-
-            max-width: 520px;
-
-        }
-
-
-        /* =================================================
-           PROFESSIONAL SERVICES
-           ================================================= */
-
-        .connect-services {
-
-            display: grid;
-
-            grid-template-columns: repeat(2, 1fr);
-
-            gap: 16px;
-
-            margin-bottom: 35px;
-
-        }
-
-
-        .connect-service {
-
-            background: #ffffff;
-
-            border: 1px solid rgba(20, 40, 65, 0.10);
-
-            padding: 20px 18px;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease;
-
-        }
-
-
-        .connect-service:hover {
-
-            transform: translateY(-4px);
-
-            box-shadow:
-                0 10px 25px rgba(0, 0, 0, 0.10);
-
-        }
-
-
-        .connect-service span {
-
-            display: block;
-
-            font-size: 12px;
-
-            font-weight: 700;
-
-            letter-spacing: 2px;
-
-            color: #ff3654;
-
-            margin-bottom: 9px;
-
-        }
-
-
-        .connect-service strong {
-
-            display: block;
-
-            color: #17263b;
-
-            font-size: 15px;
-
-            line-height: 1.45;
-
-        }
-
-
-        /* =================================================
-           WHATSAPP CTA
-           ================================================= */
-
-        .connect-question {
-
-            font-size: 15px;
-
-            font-weight: 600;
-
-            color: #17263b;
-
-            margin-bottom: 15px;
-
-        }
-
-
-        .connect-whatsapp {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            gap: 12px;
-
-            background: #25D366;
-
-            color: #ffffff;
-
-            text-decoration: none;
-
-            padding: 15px 25px;
-
-            font-size: 14px;
-
-            font-weight: 700;
-
-            letter-spacing: 0.8px;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease;
-
-        }
-
-
-        .connect-whatsapp:hover {
-
-            transform: translateY(-3px);
-
-            box-shadow:
-                0 10px 25px rgba(37, 211, 102, 0.30);
-
-        }
-
-
-        .connect-whatsapp svg {
-
-            width: 22px;
-            height: 22px;
-
-        }
-
-
-        /* =================================================
-           LINKEDIN BUTTON
-           ================================================= */
-
-        .connect-linkedin {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            margin-left: 10px;
-
-            padding: 14px 23px;
-
-            border: 1px solid #17263b;
-
-            color: #17263b;
-
-            text-decoration: none;
-
-            font-size: 14px;
-
-            font-weight: 700;
-
-            letter-spacing: 0.8px;
-
-            transition:
-                background 0.3s ease,
-                color 0.3s ease;
-
-        }
-
-
-        .connect-linkedin:hover {
-
-            background: #17263b;
-
-            color: #ffffff;
-
-        }
-
-
-        /* =================================================
-           FLOATING WHATSAPP BUTTON
-           ================================================= */
-
-        .whatsapp-float {
-
-            position: fixed;
-
-            right: 28px;
-            bottom: 28px;
-
-            width: 68px;
-            height: 68px;
-
-            background: #25D366;
-
-            border-radius: 50%;
-
-            display: flex;
-
-            align-items: center;
-            justify-content: center;
-
-            text-decoration: none;
-
-            box-shadow:
-                0 8px 28px rgba(0, 0, 0, 0.28);
-
-            z-index: 9999;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease;
-
-        }
-
-
-        .whatsapp-float svg {
-
-            width: 39px;
-            height: 39px;
-
-        }
-
-
-        .whatsapp-float:hover {
-
-            transform: translateY(-6px) scale(1.08);
-
-            box-shadow:
-                0 14px 35px rgba(0, 0, 0, 0.34);
-
-        }
-
-
-        /* =================================================
-           FLOATING WHATSAPP LABEL
-           ================================================= */
-
-        .whatsapp-label {
-
-            position: fixed;
-
-            right: 110px;
-            bottom: 48px;
-
-            background: #111827;
-
-            color: #ffffff;
-
-            padding: 10px 15px;
-
-            border-radius: 5px;
-
-            font-family: "DM Sans", sans-serif;
-
-            font-size: 13px;
-
-            font-weight: 600;
-
-            opacity: 0;
-
-            pointer-events: none;
-
-            transform: translateX(10px);
-
-            transition:
-                opacity 0.3s ease,
-                transform 0.3s ease;
-
-            z-index: 9998;
-
-        }
-
-
-        .whatsapp-float:hover + .whatsapp-label {
-
-            opacity: 1;
-
-            transform: translateX(0);
-
-        }
-
-
-        /* =================================================
-           CONTACT SECTION LAYOUT
-           ================================================= */
-
-        .contact-section {
-
-            display: grid;
-
-            grid-template-columns: 1fr 1fr;
-
-        }
-
-
-        .quick-id,
-        .connect-panel {
-
-            min-width: 0;
-
-        }
-
-
-        /* =================================================
-           TABLET
-           ================================================= */
-
-        @media (max-width: 900px) {
-
-            .contact-section {
-
-                grid-template-columns: 1fr;
-
-            }
-
-
-            .connect-panel {
-
-                padding: 55px 40px;
-
-            }
-
-        }
-
-
-        /* =================================================
-           MOBILE
-           ================================================= */
-
-        @media (max-width: 600px) {
-
-            .connect-panel {
-
-                padding: 45px 25px;
-
-            }
-
-
-            .connect-services {
-
-                grid-template-columns: 1fr;
-
-            }
-
-
-            .connect-linkedin {
-
-                margin-left: 0;
-
-                margin-top: 10px;
-
-            }
-
-
-            .whatsapp-float {
-
-                right: 18px;
-
-                bottom: 18px;
-
-                width: 60px;
-
-                height: 60px;
-
-            }
-
-
-            .whatsapp-float svg {
-
-                width: 34px;
-
-                height: 34px;
-
-            }
-
-
-            .whatsapp-label {
-
-                display: none;
-
-            }
-
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-    <!-- =====================================================
-         HEADER / NAVIGATION
-         ===================================================== -->
+         HEADER
+    ====================================================== -->
 
     <header class="site-header">
+      <div class="nav-container">
+        <a href="#home" class="logo"> SZ<span>.</span> </a>
 
-        <div class="navbar">
+        <nav class="nav-links" id="navLinks">
+          <a href="#home" class="active"> HOME </a>
 
+          <a href="#about"> ABOUT </a>
 
-            <!-- Logo -->
+          <a href="#expertise"> EXPERTISE </a>
 
-            <a
-                href="#home"
-                class="logo"
-            >
-                SZ.
-            </a>
+          <a href="#credentials"> CREDENTIALS </a>
 
+          <a href="#experience"> EXPERIENCE </a>
 
-            <!-- Desktop navigation -->
+          <a href="#leadership"> LEADERSHIP </a>
 
-            <nav class="nav-links">
+          <a href="#contact"> CONTACT </a>
+        </nav>
 
-                <a href="#home">
-                    HOME
-                </a>
+        <!-- <a
+          href="Sushil Zanwar - Profile_GRC.pdf"
+          class="nav-resume"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          VIEW MY RESUME
+          <span class="resume-arrow">↓</span>
+        </a> -->
 
-                <a href="#about">
-                    ABOUT
-                </a>
-
-                <a href="#expertise">
-                    EXPERTISE
-                </a>
-
-                <a href="#experience">
-                    EXPERIENCE
-                </a>
-
-                <a href="#credentials">
-                    CREDENTIALS
-                </a>
-
-                <a href="#leadership">
-                    LEADERSHIP
-                </a>
-
-                <a href="#contact">
-                    CONTACT
-                </a>
-
-            </nav>
-
-
-            <!-- Resume button -->
-
-            <a
-                href="Sushil Zanwar - Profile_GRC.pdf"
-                class="nav-resume"
-                target="_blank"
-            >
-                DOWNLOAD MY FULL RESUME
-            </a>
-
-
-            <!-- Mobile menu button -->
-
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                aria-label="Open navigation menu"
-            >
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-        </div>
-
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
-
-
     <!-- =====================================================
-         HERO SECTION
-         ===================================================== -->
+         MAIN
+    ====================================================== -->
 
-    <section
-        id="home"
-        class="hero-section"
-    >
+    <main>
+      <!-- =================================================
+             HERO
+        ================================================== -->
 
-
-        <!-- Background overlay -->
-
+      <section class="hero-section" id="home">
         <div class="hero-overlay"></div>
 
-
-        <!-- Hero top -->
-
-        <div class="hero-top">
-
-            <a
-                href="#home"
-                class="hero-home"
-            >
-                HOME
-            </a>
-
-
-            <a
-                href="Sushil Zanwar - Profile_GRC.pdf"
-                class="hero-resume"
-                target="_blank"
-            >
-                DOWNLOAD MY FULL RESUME
-            </a>
-
-        </div>
-
-
-        <!-- Main hero content -->
-
-        <div class="hero-content">
-
-            <p class="hero-kicker">
-                GOVERNANCE • RISK • COMPLIANCE
-            </p>
-
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-kicker">
+              <span>AUDIT</span>
+              <i></i>
+              <span>GOVERNANCE</span>
+              <i></i>
+              <span>RISK</span>
+              <i></i>
+              <span>COMPLIANCE</span>
+              <i></i>
+              <span>ASSURANCE</span>
+            </div>
 
             <h1>
-                Sushil Zanwar
+              Sushil 
+              <strong>Zanwar</strong>
             </h1>
 
+            <div class="hero-role">
+              CISA | ISO 27001 & 42001 Lead Auditor | Internal Audit | Tech Risk
+              Leader | AI Governance, Cybersecurity & Regulatory Compliance
+              (DPDPA/GDPR) | Netowrk Security & Cybersecurity Expert
+            </div>
 
-            <p class="hero-title">
-                GRC &amp; RISK PROFESSIONAL
+            <p class="hero-description">
+              Enabling secure, compliant and future-ready organizations through
+              risk-based strategies, responsible AI frameworks and robust
+              governance.
             </p>
 
+            <div class="hero-buttons">
+              <a href="#contact" class="primary-button">
+                LET'S CONNECT
+                <span>→</span>
+              </a>
+
+              <a href="#expertise" class="secondary-button">
+                EXPLORE MY WORK
+                <span>↓</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PROFILE PHOTO -->
+
+          <div class="hero-profile">
+            <div class="profile-orbit orbit-one"></div>
+            <div class="profile-orbit orbit-two"></div>
+            <div class="profile-orbit orbit-three"></div>
+
+            <div class="profile-ring">
+              <img
+                src="assets/profile-photo.jpg"
+                alt="Sushil Ramchandra Zanwar"
+                class="profile-photo"
+              />
+            </div>
+
+            <div class="profile-side-text">
+              <span>ANALYZE</span>
+              <span>SECURE</span>
+              <span>COMPLY</span>
+              <span>INNOVATE</span>
+              <span>LEAD</span>
+            </div>
+          </div>
         </div>
 
+        <!-- HERO CREDENTIAL STRIP -->
 
-        <!-- Profile image placeholder -->
+        <div class="hero-credentials">
+          <div class="hero-credential">
+            <div class="credential-icon">♜</div>
 
-        <div class="profile-photo">
-
-            <div class="profile-initials">
-                SZ
+            <div>
+              <strong>17+</strong>
+              <span>YEARS EXPERIENCE</span>
             </div>
+          </div>
 
+          <div class="credential-divider"></div>
+
+          <div class="hero-credential">
+            <div class="credential-icon">◇</div>
+
+            <div>
+              <strong>CISA</strong>
+              <span>CERTIFIED</span>
+            </div>
+          </div>
+
+          <div class="credential-divider"></div>
+
+          <div class="hero-credential">
+            <div class="credential-icon">◈</div>
+
+            <div>
+              <strong>ISO 27001 LA</strong>
+              <span>LEAD AUDITOR</span>
+            </div>
+          </div>
+
+          <div class="credential-divider"></div>
+
+          <div class="hero-credential">
+            <div class="credential-icon">▣</div>
+
+            <div>
+              <strong>ISO 42001 LA</strong>
+              <span>LEAD AUDITOR</span>
+            </div>
+          </div>
+
+          <div class="credential-divider"></div>
+
+          <div class="hero-credential">
+            <div class="credential-icon">♧</div>
+
+            <div>
+              <strong>DPDPA</strong>
+              <span>PROFESSIONAL</span>
+            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
+      <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+      <section class="content-section about-section" id="about">
+        <div class="section-container">
+          <div class="section-heading">
+            <span class="section-number"> 01 </span>
+
+            <div>
+              <span class="section-label"> PROFILE </span>
+
+              <h2>About <span>Me</span></h2>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-intro">
+              <p class="large-text">
+                Strategic Governance, Risk &amp; Assurance, Data Privacy &
+                Security, Cybersecurity, Audit professional with
+                <strong>17+ years</strong>
+                of experience.
+              </p>
+
+              <p>
+                Extensive experience in enterprise risk management, information
+                security governance, regulatory compliance, DPDPA 2023, GDPR,
+                ISO 27001, ISO 42001, TPRM, technology audit, AI Security and AI
+                Governance Audits.
+              </p>
+              <p>
+                Partnered with global tech leaders and financial institutions to strengthen their governance across critical risk domains. I bring deep domain depth and adaptability across Banking & Financial Services, the Insurance Sector, Education Institutions, and NGOs & Non-Profits.
 
 
+              </p>
 
-    <!-- =====================================================
-         ABOUT SECTION
-         ===================================================== -->
+              <!-- =====================================================
+     ABOUT NOTES
+     ===================================================== -->
 
-    <section
-        id="about"
-        class="light-section about-section"
-    >
+              <div class="about-notes">
+                <!-- Mission Note -->
+                <div class="about-note mission-note">
+                  <div class="note-pin"></div>
 
-        <div class="content-wrapper">
+                  <span class="note-number"> 01 </span>
 
+                  <h3>MISSION</h3>
 
-            <!-- Section heading -->
-
-            <div class="section-heading-row">
-
-                <div>
-
-                    <h2>
-                        ABOUT ME
-                    </h2>
-
-                    <div class="red-line"></div>
-
+                  <p>
+                    "My core mission is to empower enterprise boards and
+                    executive leadership to manage technology risks, assure AI
+                    governance, and achieve regulatory compliance."
+                  </p>
                 </div>
 
+                <!-- Professional Background Note -->
+                <div class="about-note background-note">
+                  <div class="note-pin"></div>
 
-                <a
-                    href="Sushil Zanwar - Profile_GRC.pdf"
-                    class="outline-button"
-                    target="_blank"
-                >
-                    DOWNLOAD MY FULL RESUME
-                </a>
+                  <span class="note-number"> 02 </span>
 
-            </div>
+                  <h3>VISION</h3>
 
-
-            <!-- Social links -->
-
-            <div class="social-links">
-
-                <a
-                    href="https://www.linkedin.com/in/sushilzanwar"
-                    target="_blank"
-                    aria-label="LinkedIn"
-                >
-                    in
-                </a>
-
-
-                <a
-                    href="mailto:sushil.zanwar@gmail.com"
-                    aria-label="Email"
-                >
-                    @
-                </a>
-
-
-                <a
-                    href="tel:+918806633133"
-                    aria-label="Phone"
-                >
-                    ☎
-                </a>
-
-            </div>
-
-
-            <!-- About text -->
-
-            <div class="about-grid">
-
-
-                <div class="about-column">
-
-                    <p>
-                        Strategic Governance, Risk &amp; Compliance (GRC)
-                        Leader with 18+ years of experience across Banking,
-                        BFSI, Technology, Telecom, and Digital Services.
-                    </p>
-
+                  <p>
+                    Enabling organizations to embrace technology with confidence — balancing security, governance, privacy, and responsible innovation to build a resilient future
+                  </p>
                 </div>
+              </div>
 
+              <!-- =====================================================
+     ENTERPRISE FOOTPRINT
+     ===================================================== -->
 
-                <div class="about-column">
+              <!-- <div class="enterprise-footprint">
+                <span class="footprint-label"> ENTERPRISE FOOTPRINT </span>
 
-                    <p>
-                        Proven experience across Enterprise Risk Management,
-                        information security governance, regulatory compliance,
-                        data privacy, technology audit, third-party risk
-                        management, and emerging AI governance.
-                    </p>
+                <div class="footprint-list">
+                  <span class="footprint-item"> ION Group </span>
 
+                  <span class="footprint-item"> Kotak Bank </span>
+
+                  <span class="footprint-item"> UBS </span>
+
+                  <span class="footprint-item"> Cognizant </span>
+
+                  <span class="footprint-item"> TCS </span>
+
+                  <span class="footprint-item"> Wipro </span>
                 </div>
-
+              </div> -->
             </div>
 
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         EXPERTISE SECTION
-         ===================================================== -->
-
-    <section
-        id="expertise"
-        class="image-section expertise-section"
-    >
-
-        <div class="image-section-overlay"></div>
-
-
-        <div class="content-wrapper section-relative">
-
-
-            <!-- Heading -->
-
-            <div class="section-heading-row white-heading">
-
-                <div>
-
-                    <h2>
-                        EXPERTISE
-                    </h2>
-
-                    <div class="red-line"></div>
-
-                </div>
-
-
-                <a
-                    href="Sushil Zanwar - Profile_GRC.pdf"
-                    class="outline-button light-button"
-                    target="_blank"
-                >
-                    DOWNLOAD MY FULL RESUME
-                </a>
-
-            </div>
-
-
-            <!-- Expertise cards -->
-
-            <div class="expertise-grid">
-
-
-                <!-- Card 01 -->
-
-                <article class="expertise-card">
-
-                    <span class="card-number">
-                        01
-                    </span>
-
-
-                    <h3>
-                        GRC LEADERSHIP &amp; ERM
-                    </h3>
-
-
-                    <p>
-                        Enterprise Risk Management, Information Security
-                        Governance, risk frameworks and organizational
-                        policies.
-                    </p>
-
-                </article>
-
-
-                <!-- Card 02 -->
-
-                <article class="expertise-card">
-
-                    <span class="card-number">
-                        02
-                    </span>
-
-
-                    <h3>
-                        REGULATORY &amp; DATA PRIVACY
-                    </h3>
-
-
-                    <p>
-                        DPDPA 2023, GDPR, technology audits, privacy
-                        implementation and regulatory compliance.
-                    </p>
-
-                </article>
-
-
-                <!-- Card 03 -->
-
-                <article class="expertise-card">
-
-                    <span class="card-number">
-                        03
-                    </span>
-
-
-                    <h3>
-                        AI GOVERNANCE
-                    </h3>
-
-
-                    <p>
-                        AI Management Systems, ISO/IEC 42001, model risk,
-                        explainability, ethics and AI security governance.
-                    </p>
-
-                </article>
-
-
-                <!-- Card 04 -->
-
-                <article class="expertise-card">
-
-                    <span class="card-number">
-                        04
-                    </span>
-
-
-                    <h3>
-                        AUDIT &amp; RISK ASSURANCE
-                    </h3>
-
-
-                    <p>
-                        IT and cybersecurity audits, third-party risk
-                        management and controls assurance.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         EXPERIENCE SECTION
-         ===================================================== -->
-
-    <section
-        id="experience"
-        class="light-section experience-section"
-    >
-
-        <div class="content-wrapper">
-
-
-            <!-- Heading -->
-
-            <div class="section-heading-row">
-
-                <div>
-
-                    <h2>
-                        EXPERIENCE
-                    </h2>
-
-                    <div class="red-line"></div>
-
-                </div>
-
-
-                <a
-                    href="Sushil Zanwar - Profile_GRC.pdf"
-                    class="outline-button"
-                    target="_blank"
-                >
-                    DOWNLOAD MY FULL RESUME
-                </a>
-
-            </div>
-
-
-            <!-- Experience timeline -->
-
-            <div class="experience-wrapper">
-
-                <div class="timeline-line"></div>
-
-
-                <article class="experience-item">
-
-                    <div class="timeline-dot"></div>
-
-
-                    <div class="experience-date">
-                        CURRENT
-                    </div>
-
-
-                    <div class="experience-content">
-
-
-                        <h3>
-                            Senior Lead Auditor – Internal Audit
-                        </h3>
-
-
-                        <h4>
-                            ION Group
-                        </h4>
-
-
-                        <p>
-                            Lead strategic risk advisory, DPDPA and privacy
-                            compliance initiatives, technology assurance and
-                            governance activities.
-                        </p>
-
-
-                        <p>
-                            Spearhead AI Security &amp; Governance Audits,
-                            evaluating model lifecycles, explainability,
-                            risk management and ISO/IEC 42001 alignment.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         CREDENTIALS / CERTIFICATIONS
-         ===================================================== -->
-
-    <section
-        id="credentials"
-        class="credentials-section"
-    >
-
-        <div class="content-wrapper">
-
-
-            <!-- Heading -->
-
-            <div class="section-heading-row white-heading">
-
-                <div>
-
-                    <h2>
-                        CREDENTIALS
-                    </h2>
-
-                    <div class="red-line"></div>
-
-                </div>
-
-
-                <a
-                    href="Sushil Zanwar - Profile_GRC.pdf"
-                    class="outline-button light-button"
-                    target="_blank"
-                >
-                    DOWNLOAD MY FULL RESUME
-                </a>
-
-            </div>
-
-
-            <!-- Credentials -->
-
-            <div class="credential-list">
-
-
-                <!-- Credential 01 -->
-
-                <article class="credential-item">
-
-                    <div class="credential-number">
-                        01
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Certified Information Systems Auditor
-                        </h3>
-
-
-                        <p>
-                            CISA — ISACA
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Credential 02 -->
-
-                <article class="credential-item">
-
-                    <div class="credential-number">
-                        02
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            ISO/IEC 27001:2022 Lead Auditor
-                        </h3>
-
-
-                        <p>
-                            Certified Lead Auditor
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Credential 03 -->
-
-                <article class="credential-item">
-
-                    <div class="credential-number">
-                        03
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Certified DPDPA Professional
-                        </h3>
-
-
-                        <p>
-                            Digital Personal Data Protection Act, 2023 —
-                            94% score
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Credential 04 -->
-
-                <article class="credential-item">
-
-                    <div class="credential-number">
-                        04
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Advanced AI Auditing
-                        </h3>
-
-
-                        <p>
-                            AAIA Training — ISACA
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Credential 05 -->
-
-                <article class="credential-item">
-
-                    <div class="credential-number">
-                        05
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Emerging Leader – Compliance and Risk Pioneer
-                        </h3>
-
-
-                        <p>
-                            CXO Junction — Excellence in Audit &amp;
-                            Regulatory Compliance
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         THOUGHT LEADERSHIP SECTION
-         ===================================================== -->
-
-    <section
-        id="leadership"
-        class="image-section leadership-section"
-    >
-
-        <div class="image-section-overlay"></div>
-
-
-        <div class="content-wrapper section-relative">
-
-
-            <!-- Heading -->
-
-            <div class="section-heading-row white-heading">
-
-                <div>
-
-                    <h2>
-                        THOUGHT LEADERSHIP
-                    </h2>
-
-                    <div class="red-line"></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Leadership cards -->
-
-            <div class="leadership-grid">
-
-
-                <!-- Leadership 01 -->
-
-                <article class="leadership-card">
-
-                    <span>
-                        DATA PRIVACY &amp; DPDPA
-                    </span>
-
-
-                    <h3>
-                        Privacy Implementation Programs
-                    </h3>
-
-
-                    <p>
-                        Conducted data privacy and DPDPA implementation
-                        programs for Kotak Mahindra Bank.
-                    </p>
-
-                </article>
-
-
-                <!-- Leadership 02 -->
-
-                <article class="leadership-card">
-
-                    <span>
-                        CYBERSECURITY AWARENESS
-                    </span>
-
-
-                    <h3>
-                        Cybersecurity Awareness Sessions
-                    </h3>
-
-
-                    <p>
-                        Led cybersecurity awareness sessions for Mahesh
-                        Sahakari Bank Ltd. and Mahesh Professional Forum.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         QUICK ID + LET'S CONNECT SECTION
-         
-         The old CONTACT ME form has been completely removed.
-         The right side now contains a professional connection
-         panel.
-         ===================================================== -->
-
-    <section
-        id="contact"
-        class="contact-section"
-    >
-
-
-        <!-- =================================================
-             LEFT SIDE — QUICK ID
-             ================================================= -->
-
-        <div class="quick-id">
-
-            <div class="contact-inner">
-
-
-                <h2>
-                    QUICK ID
-                </h2>
-
-
-                <div class="red-line"></div>
-
-
-                <div class="quick-details">
-
-
-                    <!-- Phone -->
-
-                    <div class="quick-row">
-
-                        <strong>
-                            Phone
-                        </strong>
-
-
-                        <a href="tel:+918806633133">
-                            +91 8806633133
-                        </a>
-
-                    </div>
-
-
-                    <!-- Email -->
-
-                    <div class="quick-row">
-
-                        <strong>
-                            Email
-                        </strong>
-
-
-                        <a href="mailto:sushil.zanwar@gmail.com">
-                            sushil.zanwar@gmail.com
-                        </a>
-
-                    </div>
-
-
-                    <!-- LinkedIn -->
-
-                    <div class="quick-row">
-
-                        <strong>
-                            LinkedIn
-                        </strong>
-
-
-                        <a
-                            href="https://www.linkedin.com/in/sushilzanwar"
-                            target="_blank"
-                        >
-                            linkedin.com/in/sushilzanwar
-                        </a>
-
-                    </div>
-
-
-                    <!-- Profile -->
-
-                    <div class="quick-row">
-
-                        <strong>
-                            Profile
-                        </strong>
-
-
-                        <span>
-                            GRC • Risk • Audit • Privacy • AI Governance
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================================
-             RIGHT SIDE — LET'S CONNECT
-             ================================================= -->
-
-        <div class="connect-panel">
-
-            <div class="connect-content">
-
-
-                <!-- Main heading -->
-
-                <h2>
-                    LET'S CONNECT
-                </h2>
-
-
-                <div class="red-line"></div>
-
-
-                <!-- Introduction -->
-
-                <p class="connect-intro">
-
-                    Looking to discuss Governance, Risk &amp; Compliance,
-                    Information Security, Data Privacy, Technology Audit
-                    or AI Governance?
-
-                    I am open to professional conversations,
-                    collaborations and consulting opportunities.
-
-                </p>
-
-
-                <!-- =================================================
-                     PROFESSIONAL AREAS
-                     ================================================= -->
-
-                <div class="connect-services">
-
-
-                    <!-- Service 01 -->
-
-                    <div class="connect-service">
-
-                        <span>
-                            01
-                        </span>
-
-                        <strong>
-                            GRC &amp; Risk Advisory
-                        </strong>
-
-                    </div>
-
-
-                    <!-- Service 02 -->
-
-                    <div class="connect-service">
-
-                        <span>
-                            02
-                        </span>
-
-                        <strong>
-                            Technology &amp; Cybersecurity Audit
-                        </strong>
-
-                    </div>
-
-
-                    <!-- Service 03 -->
-
-                    <div class="connect-service">
-
-                        <span>
-                            03
-                        </span>
-
-                        <strong>
-                            Data Privacy &amp; DPDPA
-                        </strong>
-
-                    </div>
-
-
-                    <!-- Service 04 -->
-
-                    <div class="connect-service">
-
-                        <span>
-                            04
-                        </span>
-
-                        <strong>
-                            AI Governance &amp; Security
-                        </strong>
-
-                    </div>
-
-                </div>
-
-
-                <!-- =================================================
-                     CONTACT ACTIONS
-                     ================================================= -->
-
-                <p class="connect-question">
-                    Have a professional query?
-                </p>
-
-
-                <!-- WhatsApp button -->
-
-                <a
-                    href="https://wa.me/918806633133?text=Hello%20there%2C%20I%20have%20a%20query%20about%20some%20work."
-                    class="connect-whatsapp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    <!-- Actual WhatsApp logo -->
-
-                    <svg
-                        viewBox="0 0 32 32"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                    >
-
-                        <path
-                            fill="#ffffff"
-                            d="M16 2.7C8.67 2.7 2.7 8.67 2.7 16c0 2.34.61 4.54 1.68 6.45L2.6 29.4l7.1-1.86A13.24 13.24 0 0 0 16 29.3c7.33 0 13.3-5.97 13.3-13.3S23.33 2.7 16 2.7Zm0 24.15c-2.1 0-4.08-.57-5.78-1.56l-.41-.24-4.21 1.1 1.12-4.1-.27-.43A10.97 10.97 0 1 1 16 26.85Z"
-                        />
-
-
-                        <path
-                            fill="#ffffff"
-                            d="M21.4 17.9c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.77.36-.26.29-1 1-1 2.44s1.02 2.83 1.16 3.02c.14.19 2 3.05 4.84 4.28.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.34Z"
-                        />
-
-                    </svg>
-
-
-                    CHAT ON WHATSAPP
-
-                </a>
-
-
-                <!-- LinkedIn button -->
-
-                <a
-                    href="https://www.linkedin.com/in/sushilzanwar"
-                    class="connect-linkedin"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    VIEW LINKEDIN
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         FLOATING WHATSAPP BUTTON
-         
-         The button stays visible while scrolling.
-         It uses the actual WhatsApp-style SVG logo.
-         ===================================================== -->
-
-    <a
-        href="https://wa.me/918806633133?text=Hello%20there%2C%20I%20have%20a%20query%20about%20some%20work."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Chat with Sushil Zanwar on WhatsApp"
-        title="Chat on WhatsApp"
-    >
-
-
-        <!-- =================================================
-             ACTUAL WHATSAPP LOGO
-             ================================================= -->
-
-        <svg
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-        >
-
-
-            <!-- WhatsApp outer speech bubble -->
-
-            <path
-                fill="#ffffff"
-                d="M16 2.7C8.67 2.7 2.7 8.67 2.7 16c0 2.34.61 4.54 1.68 6.45L2.6 29.4l7.1-1.86A13.24 13.24 0 0 0 16 29.3c7.33 0 13.3-5.97 13.3-13.3S23.33 2.7 16 2.7Zm0 24.15c-2.1 0-4.08-.57-5.78-1.56l-.41-.24-4.21 1.1 1.12-4.1-.27-.43A10.97 10.97 0 1 1 16 26.85Z"
-            />
-
-
-            <!-- WhatsApp telephone receiver inside logo -->
-
-            <path
-                fill="#ffffff"
-                d="M21.4 17.9c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.77.36-.26.29-1 1-1 2.44s1.02 2.83 1.16 3.02c.14.19 2 3.05 4.84 4.28.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.7-.69 1.94-1.36.24-.67.24-1.25.17-1.36-.07-.12-.26-.19-.55-.34Z"
-            />
-
-        </svg>
-
-    </a>
-
-
-    <!-- Floating button label -->
-
-    <div class="whatsapp-label">
-        Chat on WhatsApp
-    </div>
-
-
-
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-
-            <!-- Footer left -->
-
-            <div class="footer-left">
-
-
-                <a
-                    href="Sushil Zanwar - Profile_GRC.pdf"
-                    class="footer-resume"
-                    target="_blank"
-                >
-                    DOWNLOAD MY FULL RESUME
-                </a>
-
+            <!-- <div class="domain-grid">
+              <div class="domain-card">
+                <span>01</span>
+
+                <h3>Risk Management & Governance</h3>
 
                 <p>
-
-                    ©
-                    <span id="currentYear"></span>
-                    Sushil Zanwar.
-                    All rights reserved.
-
+                  Enterprise governance, risk frameworks and regulatory
+                  readiness.
                 </p>
+              </div>
+
+              <div class="domain-card">
+                <span>02</span>
+
+                <h3>Cybersecurity</h3>
+
+                <p>
+                  Technology risk, cybersecurity audit and information security
+                  assurance.
+                </p>
+              </div>
+
+              <div class="domain-card">
+                <span>03</span>
+
+                <h3>Data Privacy</h3>
+
+                <p>DPDPA 2023, GDPR and privacy implementation programs.</p>
+              </div>
+
+              <div class="domain-card">
+                <span>04</span>
+
+                <h3>Responsible AI</h3>
+
+                <p>AI Security, AI Governance and ISO/IEC 42001 alignment.</p>
+              </div>
+
+              <div class="domain-card">
+                <span> 05 </span>
+
+                <h3>Internal Audits & ITGC</h3>
+
+                <p>Technology risk reviews, ITGC and control assurance.</p>
+              </div>
+
+              <div class="domain-card">
+                <span> 06 </span>
+
+                <h3>Regulatory Readiness</h3>
+
+                <p>DPDPA, GDPR, RBI and PCI-DSS compliance readiness.</p>
+              </div>
+            </div>// -->
+            <!-- =====================================================
+     RIGHT SIDE — IMAGE + ENTERPRISE FOOTPRINT
+     ===================================================== -->
+
+<div class="about-visual">
+
+  <div class="about-image-wrapper">
+    <img
+      src="assets/about-me-image.png"
+      alt="Sushil Ramchandra Zanwar - Governance, Risk and Assurance"
+    />
+  </div>
+
+  <div class="enterprise-footprint">
+
+    <span class="footprint-label">
+  <span class="footprint-enterprise">Enterprise</span>
+  <span class="footprint-red">Footprint</span>
+</span>
+
+    <div class="footprint-list">
+
+      <span class="footprint-item">ION Group</span>
+
+      <span class="footprint-item">Kotak Bank</span>
+
+      <span class="footprint-item">UBS</span>
+
+      <span class="footprint-item">Cognizant</span>
+
+      <span class="footprint-item">TCS</span>
+
+      <span class="footprint-item">Wipro</span>
+
+    </div>
+
+  </div>
+
+</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             EXPERTISE
+        ================================================== -->
+
+      <section class="content-section expertise-section" id="expertise">
+        <div class="section-container">
+          <div class="section-heading light-heading">
+            <span class="section-number"> 02 </span>
+
+            <div>
+              <span class="section-label"> CORE CAPABILITIES </span>
+
+              <h2>Areas of <span>Expertise</span></h2>
+            </div>
+          </div>
+
+          <div class="expertise-grid">
+            <!-- Card 01 - Cybersecurity -->
+            <article class="offering-card">
+              <div class="expertise-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3L5 6v5c0 4.5 2.9 8.5 7 10 4.1-1.5 7-5.5 7-10V6l-7-3z"
+                  ></path>
+                  <path d="M12 7v9"></path>
+                </svg>
+              </div>
+
+              <h3>Cybersecurity</h3>
+
+              <div class="expertise-points">
+                <p>
+                  <strong>Governance:</strong>
+                  Structure &amp; policy reviews
+                </p>
+
+                <p>
+                  <strong>Maturity:</strong>
+                  Security baseline capability
+                </p>
+
+                <p>
+                  <strong>ISO 27001:</strong>
+                  End-to-end audit readiness
+                </p>
+
+                <p>
+                  <strong>Awareness:</strong>
+                  Executive security workshops
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 02 - Audit & Assurance -->
+            <article class="offering-card">
+              <div class="expertise-icon dark-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="10" cy="10" r="5"></circle>
+                  <path d="M10 7v6"></path>
+                  <path d="M10 10l3 2"></path>
+                  <path d="M14 14l4 4"></path>
+                </svg>
+              </div>
+
+              <h3>Audit &amp; Assurance</h3>
+
+              <div class="expertise-points">
+                <p>
+                  <strong>ITGC Reviews:</strong>
+                  General control evaluation
+                </p>
+
+                <p>
+                  <strong>Internal Audit:</strong>
+                  IT risk focused reviews
+                </p>
+
+                <p>
+                  <strong>Cyber Audit:</strong>
+                  Threat posture validation
+                </p>
+
+                <p>
+                  <strong>Vendor Risk:</strong>
+                  Third-party risk assurance
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 03 - AI Governance -->
+            <article class="offering-card">
+              <div class="expertise-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="7" y="7" width="10" height="10" rx="2"></rect>
+                  <path d="M9 3v4"></path>
+                  <path d="M12 3v4"></path>
+                  <path d="M15 3v4"></path>
+                  <path d="M9 17v4"></path>
+                  <path d="M12 17v4"></path>
+                  <path d="M15 17v4"></path>
+                  <path d="M3 9h4"></path>
+                  <path d="M3 12h4"></path>
+                  <path d="M3 15h4"></path>
+                  <path d="M17 9h4"></path>
+                  <path d="M17 12h4"></path>
+                  <path d="M17 15h4"></path>
+                </svg>
+              </div>
+
+              <h3>AI Governance</h3>
+
+              <div class="expertise-points">
+                <p>
+                  <strong>ISO 42001:</strong>
+                  Management system setup
+                </p>
+
+                <p>
+                  <strong>AI Risk Reviews:</strong>
+                  Model &amp; data risk checks
+                </p>
+
+                <p>
+                  <strong>Responsible AI:</strong>
+                  Ethics &amp; bias controls
+                </p>
+
+                <p>
+                  <strong>Frameworks:</strong>
+                  NIST AI RMF alignment
+                </p>
+              </div>
+            </article>
+
+            <!-- Card 04 - Data Privacy -->
+            <article class="offering-card">
+              <div class="expertise-icon dark-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="8" cy="9" r="3"></circle>
+                  <circle cx="16" cy="9" r="3"></circle>
+                  <path d="M3 19c0-3 2-5 5-5s5 2 5 5"></path>
+                  <path d="M11 19c0-2.5 2-4 5-4s5 1.5 5 4"></path>
+                </svg>
+              </div>
+
+              <h3>Data Privacy</h3>
+
+              <div class="expertise-points">
+                <p>
+                  <strong>DPDPA Readiness:</strong>
+                  Indian privacy act strategy
+                </p>
+
+                <p>
+                  <strong>GDPR Compliance:</strong>
+                  Global data privacy
+                </p>
+
+                <p>
+                  <strong>Privacy Risk:</strong>
+                  DPIA &amp; impact assessments
+                </p>
+
+                <p>
+                  <strong>Control Reviews:</strong>
+                  Data life-cycle checks
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             WHY ENGAGE ME
+        ================================================== -->
+
+      <section class="content-section why-engage-section" id="why-engage">
+        <div class="section-container">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+
+            <div>
+              <span class="section-label">VALUE PROPOSITION</span>
+
+              <h2>Why <span>Engage Me?</span></h2>
+            </div>
+          </div>
+
+          <div class="why-engage-grid">
+            <!-- 01 -->
+            <article class="why-engage-card">
+              <div class="why-engage-icon why-engage-stat">
+                <strong>17+</strong>
+              </div>
+
+              <h3>Years Experience</h3>
+
+              <p>
+                Deep domain depth across banking, financial services, and global
+                tech leaders.
+              </p>
+            </article>
+
+            <!-- 02 -->
+            <article class="why-engage-card">
+              <div class="why-engage-icon why-engage-dark">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="9" cy="9" r="3"></circle>
+                  <path d="M3 19c0-3 2.5-5 6-5s6 2 6 5"></path>
+                  <path d="M16 8h4"></path>
+                  <path d="M18 6v4"></path>
+                </svg>
+              </div>
+
+              <h3>Practitioner + Auditor</h3>
+
+              <p>
+                Hands-on security background combined with executive audit
+                experience.
+              </p>
+            </article>
+
+            <!-- 03 -->
+            <article class="why-engage-card">
+              <div class="why-engage-icon why-engage-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 4l6 6"></path>
+                  <path d="M12 6l6 6"></path>
+                  <path d="M5 19l4-4"></path>
+                  <path d="M4 20l5-1 8-8-4-4-8 8z"></path>
+                </svg>
+              </div>
+
+              <h3>Regulatory Mastery</h3>
+
+              <p>
+                Expert guidance on RBI, DPDPA, GDPR, PCI-DSS, and global ISO
+                standard frameworks.
+              </p>
+            </article>
+
+            <!-- 04 -->
+            <article class="why-engage-card">
+              <div class="why-engage-icon why-engage-dark">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="6" y="7" width="12" height="10" rx="2"></rect>
+                  <path d="M9 3v4"></path>
+                  <path d="M12 3v4"></path>
+                  <path d="M15 3v4"></path>
+                  <path d="M9 17v4"></path>
+                  <path d="M12 17v4"></path>
+                  <path d="M15 17v4"></path>
+                  <circle cx="10" cy="12" r="1"></circle>
+                  <circle cx="14" cy="12" r="1"></circle>
+                </svg>
+              </div>
+
+              <h3>Emerging Tech Focus</h3>
+
+              <p>
+                Pioneering capability in ISO 42001 AI governance and responsible
+                AI assurance.
+              </p>
+            </article>
+
+            <!-- 05 -->
+            <article class="why-engage-card">
+              <div class="why-engage-icon why-engage-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 19h16"></path>
+                  <path d="M6 16l4-4 3 2 5-6"></path>
+                  <path d="M18 8h-4"></path>
+                  <path d="M18 8v4"></path>
+                </svg>
+              </div>
+
+              <h3>Executive Reporting</h3>
+
+              <p>
+                Board-ready reporting leveraging Power BI and Tableau
+                visualization metrics.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+     CREDENTIALS
+================================================== -->
+
+      <section class="content-section credentials-section" id="credentials">
+        <div class="section-container">
+          <!-- Section Heading -->
+
+          <div class="section-heading">
+            <span class="section-number"> 04 </span>
+
+            <div>
+              <span class="section-label"> PROFESSIONAL CREDENTIALS </span>
+
+              <h2>Certifications &amp; <span class="section-label-achievements">Achievements</span></h2>
+            </div>
+          </div>
+
+          <!-- =================================================
+             CERTIFICATION CARDS
+        ================================================== -->
+
+          <div class="certification-cards">
+            <!-- CISA -->
+
+            <article class="certification-card">
+              <div class="certification-icon certification-icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2l2.1 2.2 3-.3.8 2.9 2.7 1.4-1.4 2.7.8 2.9-2.9.8-.8 2.9-3-.3L12 20l-2.1-2.2-3 .3-.8-2.9-2.7-1.4 1.4-2.7-.8-2.9 2.9-.8.8-2.9 3 .3L12 2z"
+                  ></path>
+
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+
+              <h3>CISA</h3>
+
+              <p>ISACA Certified</p>
+            </article>
+
+            <!-- ISO 27001 -->
+
+            <article class="certification-card">
+              <div class="certification-icon certification-icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3l7 3v5c0 4.5-2.8 7.7-7 10-4.2-2.3-7-5.5-7-10V6l7-3z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3>ISO 27001 LA</h3>
+
+              <p>Lead Auditor</p>
+            </article>
+
+            <!-- ISO 42001 -->
+
+            <article class="certification-card">
+              <div class="certification-icon certification-icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 4v16"></path>
+                  <path d="M16 4v16"></path>
+
+                  <path d="M4 8h16"></path>
+                  <path d="M4 16h16"></path>
+
+                  <path d="M10 6h4"></path>
+                  <path d="M10 18h4"></path>
+                </svg>
+              </div>
+
+              <h3>ISO 42001 LA</h3>
+
+              <p>AI Lead Auditor</p>
+            </article>
+
+            <!-- DPDPA -->
+
+            <article class="certification-card">
+              <div class="certification-icon certification-icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3"></circle>
+
+                  <path d="M3 20c0-3.2 2.4-5 6-5s6 1.8 6 5"></path>
+
+                  <rect x="14" y="12" width="7" height="7" rx="1.5"></rect>
+
+                  <path d="M16 12v-1a2 2 0 0 1 4 0v1"></path>
+                </svg>
+              </div>
+
+              <h3>DPDPA Professional</h3>
+
+              <p>Privacy Expert</p>
+            </article>
+
+            <!-- Advanced AI Auditing -->
+
+            <article class="certification-card">
+              <div class="certification-icon certification-icon-teal">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+
+                  <path d="M9 2v4"></path>
+                  <path d="M12 2v4"></path>
+                  <path d="M15 2v4"></path>
+
+                  <path d="M9 18v4"></path>
+                  <path d="M12 18v4"></path>
+                  <path d="M15 18v4"></path>
+
+                  <path d="M2 9h4"></path>
+                  <path d="M2 12h4"></path>
+                  <path d="M2 15h4"></path>
+
+                  <path d="M18 9h4"></path>
+                  <path d="M18 12h4"></path>
+                  <path d="M18 15h4"></path>
+                </svg>
+              </div>
+
+              <h3>Advanced AI Auditing</h3>
+
+              <p>ISACA Specialty</p>
+            </article>
+          </div>
+
+          <!-- =================================================
+             INDUSTRY AWARD RECOGNITION
+        ================================================== -->
+
+          <div class="industry-award">
+            <div class="industry-award-image">
+              <img
+                src="assets/industry-award.jpg"
+                alt="Industry Award Recognition"
+              />
+            </div>
+
+            <div class="industry-award-content">
+              <span class="industry-award-label">
+                INDUSTRY AWARD RECOGNITION
+              </span>
+
+              <h3>Emerging Leader – Compliance &amp; Risk Pioneer</h3>
+
+              <p>
+                Recognized for excellence in technology risk management and AI
+                governance adoption.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- =====================================================
+     EXPERIENCE SECTION
+     ===================================================== -->
+
+      <section id="experience" class="light-section experience-section">
+        <div class="content-wrapper">
+          <div class="section-heading-row">
+            <div>
+              <h2>EXPERIENCE</h2>
+
+              <div class="red-line"></div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+
+          <div class="experience-wrapper">
+            <div class="timeline-line"></div>
+
+            <!-- =================================================
+                 01 — ION GROUP
+                 ================================================= -->
+
+            <article class="experience-item">
+              <div class="timeline-dot"></div>
+
+              <div class="experience-date">01</div>
+
+              <div class="experience-content">
+                <h3>Senior Lead Auditor – Internal Audit</h3>
+
+                <h4>ION Group</h4>
+
+                <p>
+                  Lead strategic risk advisory, DPDPA and privacy compliance
+                  initiatives, technology assurance and governance activities.
+                </p>
+
+                <p>
+                  Spearhead AI Security &amp; Governance Audits, evaluating
+                  model lifecycles, explainability, risk management and ISO/IEC
+                  42001 alignment.
+                </p>
+              </div>
+            </article>
+
+            <!-- =================================================
+                 02 — KOTAK MAHINDRA BANK
+                 ================================================= -->
+
+            <article class="experience-item">
+              <div class="timeline-dot"></div>
+
+              <div class="experience-date">02</div>
+
+              <div class="experience-content">
+                <h3>Deputy Vice President – Internal Audit</h3>
+
+                <h4>Kotak Mahindra Bank</h4>
+
+                <p>
+                  Led multiple IT, Cyber Security, Network Security, BCM/DR,
+                  Third-Party Vendor, and IT Application audits, including gap
+                  assessments against RBI, DPDP, PCI-DSS, and other regulatory
+                  guidelines.
+                </p>
+
+                <p>
+                  Led a 5-member audit team across planning, walkthroughs, risk
+                  assessments, reporting, and RBI submissions, while
+                  contributing to RBI regulatory initiatives and BCM/DR drills.
+                </p>
+              </div>
+            </article>
+
+            <!-- =================================================
+                 03 — UBS
+                 ================================================= -->
+
+            <article class="experience-item">
+              <div class="timeline-dot"></div>
+
+              <div class="experience-date">03</div>
+
+              <div class="experience-content">
+                <h3>Audit Expert</h3>
+
+                <h4>UBS</h4>
+
+                <p>
+                  Spearheaded IT Infrastructure and Cyber Security Audits for a
+                  bank, covering audit planning, risk assessment, control
+                  testing, regulatory compliance, and reporting.
+                </p>
+
+                <p>
+                  Reviewed key security controls, firewall rules, traffic, and
+                  proxy configurations to identify control gaps, anomalies, and
+                  security risks.
+                </p>
+              </div>
+            </article>
+
+            <!-- =================================================
+                 EARLIER PROFESSIONAL EXPERIENCE
+                 ================================================= -->
+
+            <article class="experience-summary">
+              <div class="experience-summary-number">04</div>
+
+              <div class="experience-summary-content">
+                <span class="experience-summary-label">
+                  EARLIER PROFESSIONAL EXPERIENCE
+                </span>
+
+                <h3>Technology, Infrastructure &amp; Security Foundation</h3>
+
+                <p>
+                  Built a strong foundation across technology infrastructure,
+                  network security, information security and enterprise
+                  technology operations, with experience spanning ITGC and
+                  internal controls, network deployment and modernization,
+                  firewall and security administration, vulnerability
+                  remediation, infrastructure governance, disaster recovery and
+                  technology support.
+                </p>
+
+                <div class="experience-companies">
+                  <span> Cognizant Technologies Solutions </span>
+
+                  <span> Tata Consultancy Services </span>
+
+                  <span> SunGard IT Availability </span>
+
+                  <span> Titan Technologies </span>
+
+                  <span> Wipro Limited </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+            <!-- =================================================
+             LEADERSHIP
+        ================================================== -->
+
+      <section class="content-section leadership-section" id="leadership">
+        <div class="section-container">
+          <div class="section-heading light-heading">
+            <span class="section-number"> 05 </span>
+
+            <div>
+              <span class="section-label"> THOUGHT LEADERSHIP </span>
+
+              <h2>
+                Leadership &amp;
+                <span>Impact</span>
+              </h2>
+            </div>
+          </div>
+
+          <div class="leadership-grid">
+            <article class="leadership-card">
+              <span class="leadership-number"> 01 </span>
+
+              <h3>Privacy Implementation</h3>
+
+              <p>Privacy implementation programs for Kotak Mahindra Bank.</p>
+            </article>
+
+            <article class="leadership-card">
+              <span class="leadership-number"> 02 </span>
+
+              <h3>Cybersecurity Awareness</h3>
+
+              <p>
+                Cybersecurity awareness sessions for Mahesh Sahakari Bank Ltd.
+                &amp; Mahesh Professional Forum.
+              </p>
+            </article>
+
+            <article class="leadership-card">
+              <span class="leadership-number"> 03 </span>
+
+              <h3>AI Governance</h3>
+
+              <p>
+                AI Governance and Security Audits covering model lifecycle,
+                explainability, risk and responsible AI.
+              </p>
+            </article>
+
+            <article class="leadership-card">
+              <span class="leadership-number"> 04 </span>
+
+              <h3>Regulatory Readiness</h3>
+
+              <p>
+                Supporting organizations with governance, privacy and regulatory
+                readiness.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             SECTORS
+        ================================================== -->
+
+      <!-- <section class="content-section sectors-section">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        06
+                    </span>
+
+                    <div>
+
+                        <span class="section-label">
+                            SECTOR EXPERIENCE
+                        </span>
+
+                        <h2>
+                            Industry <span>Perspective</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="sectors-grid">
+
+                    <div class="sector-card">
+                        <span>01</span>
+                        <h3>BFSI</h3>
+                        <p>
+                            Services covering technology risk, information security governance, regulatory compliance, technology audit, data privacy and cybersecurity awareness.
+                        </p>
+                    </div>
+
+                    <div class="sector-card">
+                        <span>02</span>
+                        <h3>Technology</h3>
+                        <p>Experience covering technology risk, information security governance, technology audits, cybersecurity assurance and third-party risk management.</p>
+                    </div>
+
+                    <div class="sector-card">
+                        <span>03</span>
+                        <h3>Education</h3>
+                    </div>
+
+                    <div class="sector-card">
+                        <span>04</span>
+                        <h3>Health care Services</h3>
+                    </div>
+
+                </div>
 
             </div>
 
+        </section> -->
 
-            <!-- Footer right -->
+      <!-- =================================================
+             VALUE PROPOSITION
+        ================================================== -->
 
-            <div class="footer-right">
+      <section class="value-section">
+        <div class="value-overlay"></div>
+
+        <div class="section-container value-container">
+          <div class="value-heading">
+            <span> VALUE PROPOSITION </span>
+
+            <h2>
+              Secure. Compliant.
+              <br />
+              <strong>Future-Ready.</strong>
+            </h2>
+          </div>
+
+          <div class="value-grid">
+            <div class="value-card">
+              <span>01</span>
+
+              <h3>Strategic</h3>
+
+              <p>
+                Risk-based strategies aligned with organizational objectives.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <span>02</span>
+
+              <h3>Practical</h3>
+
+              <p>
+                Actionable governance and assurance approaches designed for
+                real-world environments.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <span>03</span>
+
+              <h3>Future-Ready</h3>
+
+              <p>
+                Responsible AI, privacy and security frameworks designed for
+                evolving regulatory expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+     AI GOVERNANCE & RISK ASSURANCE
+================================================== -->
+
+      <section class="content-section ai-assurance-section">
+        <div class="section-container">
+          <div class="ai-assurance-heading">
+            <span class="ai-assurance-label"> CORE DIFFERENTIATOR </span>
+
+            <h2>AI Governance &amp; <span class="risk-assurance">Risk Assurance</span></h2>
+          </div>
+
+          <div class="ai-assurance-grid">
+            <!-- =========================================
+                 LEFT SIDE — AI ASSURANCE AREAS
+            ========================================== -->
+
+            <div class="ai-assurance-content">
+              <article class="ai-assurance-card ai-card-teal">
+                <h3>ISO 42001 Readiness Reviews</h3>
+
+                <p>
+                  Gap analysis and roadmap for AI Management System
+                  certification.
+                </p>
+              </article>
+
+              <article class="ai-assurance-card ai-card-navy">
+                <h3>AI Risk Framework Implementation</h3>
+
+                <p>
+                  Alignment with NIST AI Risk Management Framework (NIST AI
+                  RMF).
+                </p>
+              </article>
+
+              <article class="ai-assurance-card ai-card-teal">
+                <h3>Responsible AI &amp; Audit Programs</h3>
+
+                <p>
+                  Ethics controls, model risk assessments, and executive
+                  awareness.
+                </p>
+              </article>
+            </div>
+
+            <!-- =========================================
+                 RIGHT SIDE — AI VISUAL
+            ========================================== -->
+
+            <div class="ai-assurance-visual">
+              <div class="ai-assurance-image">
+                <img
+                  src="assets/ai-governance-brain.jpg"
+                  alt="AI Governance and Risk Assurance"
+                />
+              </div>
+
+              <div class="ai-client-value">
+                <span> CLIENT VALUE PROPOSITION </span>
+
+                <p>
+                  "Adopt AI confidently while managing governance, compliance,
+                  and risk."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     CLIENT FEEDBACK / WHAT CLIENTS APPRECIATE
+     ===================================================== -->
+
+      <section class="content-section client-feedback-section">
+        <div class="section-container">
+          <!-- Heading -->
+
+          <div class="client-feedback-heading">
+            <span class="client-feedback-label"> FEEDBACK </span>
+
+            <h2>What Clients Appreciate</h2>
+          </div>
+
+          <!-- Feedback Cards -->
+
+          <div class="client-feedback-grid">
+            <!-- =================================================
+                 FEEDBACK 01
+            ================================================== -->
+
+            <article class="client-feedback-card">
+              <div class="client-feedback-quote">
+                <p>
+                  "The cybersecurity awareness session was practical, engaging,
+                  and highly relevant to banking operations. Complex
+                  cybersecurity concepts were explained in a simple and
+                  actionable manner."
+                </p>
+              </div>
+
+              <div class="client-feedback-divider"></div>
+
+              <div class="client-feedback-author">
+                <strong> Senior Management </strong>
+
+                <span> Cooperative Banking Sector </span>
+              </div>
+            </article>
+
+            <!-- =================================================
+                 FEEDBACK 02
+            ================================================== -->
+
+            <article class="client-feedback-card">
+              <div class="client-feedback-quote">
+                <p>
+                  "Strong understanding of regulatory expectations, technology
+                  risks, and governance frameworks. Audit recommendations were
+                  realistic and helped strengthen our control environment."
+                </p>
+              </div>
+
+              <div class="client-feedback-divider"></div>
+
+              <div class="client-feedback-author">
+                <strong> Audit Stakeholder </strong>
+
+                <span> Financial Services Organization </span>
+              </div>
+            </article>
+
+            <!-- =================================================
+                 FEEDBACK 03
+            ================================================== -->
+
+            <article class="client-feedback-card">
+              <div class="client-feedback-quote">
+                <p>
+                  "Excellent blend of technical expertise, compliance knowledge,
+                  and business understanding. The session provided valuable
+                  insights into AI governance and cybersecurity risks."
+                </p>
+              </div>
+
+              <div class="client-feedback-divider"></div>
+
+              <div class="client-feedback-author">
+                <strong> Risk &amp; Compliance Leader </strong>
+
+                <span> Enterprise Executive Workshop </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+     COLLABORATION / ENGAGEMENT MODELS
+     ===================================================== -->
+
+      <section class="content-section engagement-models-section">
+        <div class="section-container">
+          <!-- Section Heading -->
+
+          <div class="engagement-heading">
+            <span class="engagement-label"> COLLABORATION </span>
+
+            <h2>Engagement Models &amp; <span class="engagemene-offerings">Offerings</span></h2>
+          </div>
+
+          <!-- Main Two Column Layout -->
+
+          <div class="engagement-grid">
+            <!-- =================================================
+                 LEFT PANEL — FLEXIBLE CONSULTING MODELS
+            ================================================== -->
+
+            <div class="engagement-panel">
+              <h3>Flexible Consulting Models</h3>
+
+              <div class="engagement-model-list">
+                <div class="engagement-model-item">
+                  <p>
+                    <strong>Project-Based:</strong>
+                    Targeted risk assessments, audits, and gap reviews.
+                  </p>
+                </div>
+
+                <div class="engagement-model-item">
+                  <p>
+                    <strong>Retainer Model:</strong>
+                    Ongoing monthly advisory, audit, &amp; risk support.
+                  </p>
+                </div>
+
+                <div class="engagement-model-item">
+                  <p>
+                    <strong>Training Model:</strong>
+                    Custom workshops &amp; awareness programs.
+                  </p>
+                </div>
+              </div>
+
+              <div class="engagement-panel-footer engagement-footer-dark">
+                <span class="engagement-footer-icon"> ◉ </span>
+
+                <span>
+                  Virtual or Onsite Delivery Across India &amp; Globally
+                </span>
+              </div>
+            </div>
+
+            <!-- =================================================
+                 RIGHT PANEL — SAMPLE ENGAGEMENT MENU
+            ================================================== -->
+
+            <div class="engagement-panel">
+              <h3>Sample Engagement Menu</h3>
+
+              <div class="engagement-menu-grid">
+                <!-- Advisory -->
+
+                <div class="engagement-menu-item">
+                  <h4>Advisory</h4>
+
+                  <p>Security Governance • Risk &amp; Gap Assessments</p>
+                </div>
+
+                <!-- Audit -->
+
+                <div class="engagement-menu-item">
+                  <h4>Audit</h4>
+
+                  <p>Internal IT Audit • ITGC • Cybersecurity Audits</p>
+                </div>
+
+                <!-- Training -->
+
+                <div class="engagement-menu-item">
+                  <h4>Training</h4>
+
+                  <p>DPDPA Privacy • Cyber &amp; AI Governance</p>
+                </div>
+
+                <!-- Workshops -->
+
+                <div class="engagement-menu-item">
+                  <h4>Workshops</h4>
+
+                  <p>Board &amp; Leadership Risk Briefings</p>
+                </div>
+              </div>
+
+              <div class="engagement-panel-footer engagement-footer-teal">
+                <span> Tailored Programs Designed for Enterprise Scale </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+     CONTACT
+================================================== -->
+
+<section class="content-section contact-section" id="contact">
+
+    <div class="section-container">
+
+        <!-- =================================================
+             SECTION HEADING
+             ================================================== -->
+
+        <div class="section-heading">
+
+            <span class="section-number">
+                07
+            </span>
+
+            <div>
+
+                <span class="section-label">
+                    LET'S CONNECT
+                </span>
+
+                <h2>
+                    Start a <span>Conversation</span>
+                </h2>
+
+            </div>
+
+        </div>
 
 
-                <div class="footer-social">
+        <!-- =================================================
+             CONTACT GRID
+             ================================================== -->
 
+        <div class="contact-grid">
+
+
+            <!-- =================================================
+                 LEFT — QUICK ID
+                 KEEPING THIS AS IT IS
+                 ================================================== -->
+
+            <div class="quick-id">
+
+                <h3>
+                    QUICK ID
+                </h3>
+
+
+                <div class="quick-line"></div>
+
+
+                <!-- NAME -->
+
+                <div class="contact-detail">
+
+                    <span>
+                        NAME
+                    </span>
+
+                    <strong>
+                        Sushil Zanwar
+                    </strong>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-detail">
+
+                    <span>
+                        EMAIL
+                    </span>
+
+                    <a href="mailto:sushil.zanwar@gmail.com">
+                        sushil.zanwar@gmail.com
+                    </a>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="contact-detail">
+
+                    <span>
+                        PHONE
+                    </span>
+
+                    <a href="tel:+918806633133">
+                        +91-8806633133
+                    </a>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+
+                <div class="contact-detail">
+
+                    <span>
+                        LINKEDIN
+                    </span>
 
                     <a
                         href="https://www.linkedin.com/in/sushilzanwar"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        in
-                    </a>
-
-
-                    <a
-                        href="mailto:sushil.zanwar@gmail.com"
-                    >
-                        @
-                    </a>
-
-
-                    <a
-                        href="tel:+918806633133"
-                    >
-                        ☎
+                        linkedin.com/in/sushilzanwar
                     </a>
 
                 </div>
 
+            </div>
 
-                <p>
-                    Connect with me
-                </p>
+
+            <!-- =================================================
+                 RIGHT — STRATEGIC ASSURANCE & RISK ADVISORY
+                 ================================================== -->
+
+            <div class="connect-panel">
+
+                <div class="strategic-connect-card">
+
+
+                    <!-- =================================================
+                         STRATEGIC ADVISORY HEADING
+                         ================================================== -->
+
+                    <div class="strategic-connect-heading">
+
+                        <div class="strategic-connect-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="8"
+                                ></circle>
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="3"
+                                ></circle>
+
+                                <circle
+                                    cx="12"
+                                    cy="4"
+                                    r="1"
+                                    fill="currentColor"
+                                    stroke="none"
+                                ></circle>
+
+                            </svg>
+
+                        </div>
+
+
+                        <span>
+                            Strategic Assurance &amp; Risk Advisory
+                        </span>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         STRATEGIC MESSAGE
+                         ================================================== -->
+
+                    <div class="strategic-connect-message">
+
+                        <p>
+                            "Helping organizations transform compliance into
+                            confidence, governance into resilience, and technology
+                            risks into business opportunities."
+                        </p>
+
+                    </div>
+
+
+                </div>
 
             </div>
 
+
         </div>
 
+    </div>
+
+</section>
+    <!-- =====================================================
+         FLOATING WHATSAPP
+    ====================================================== -->
+
+    <a
+      href="https://wa.me/918806633133?text=Hello%20there%2C%20I%20have%20a%20query%20about%20some%20work."
+      class="floating-whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill="currentColor"
+    d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.53 0 .2 5.33.2 11.88c0 2.09.55 4.13 1.59 5.93L.1 23.9l6.23-1.63a11.9 11.9 0 0 0 5.75 1.47h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.17-3.45-8.38Zm-8.44 18.25h-.01a9.86 9.86 0 0 1-5.02-1.38l-.36-.21-3.7.97.99-3.61-.23-.37a9.86 9.86 0 0 1-1.51-5.25C2.24 6.44 6.65 2.03 12.08 2.03c2.63 0 5.1 1.03 6.96 2.89a9.84 9.84 0 0 1 2.89 6.95c0 5.44-4.41 9.86-9.85 9.86Zm5.41-7.39c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+  />
+</svg>
+    </a>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">SZ<span>.</span></div>
+
+          <p>Sushil Zanwar</p>
+
+          <span> CISA | ISO 27001 & 42001 | DPDPA | GDPR | CyberSecurity </span>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home"> HOME </a>
+
+          <a href="#about"> ABOUT </a>
+
+          <a href="#expertise"> EXPERTISE </a>
+
+          <a href="#contact"> CONTACT </a>
+        </div>
+
+        <div class="footer-contact">
+          <a href="mailto:sushil.zanwar@gmail.com"> sushil.zanwar@gmail.com </a>
+
+          <a
+            href="https://www.linkedin.com/in/sushilzanwar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="currentYear"></span>
+          Sushil Ramchandra Zanwar. All rights reserved.
+        </span>
+
+        <span>
+          CISA • ISO 27001 & 42001 Lead Auditor • Internal Audit • Tech Risk
+          Leader • AI Governance, Cybersecurity & Regulatory Compliance
+          (DPDPA/GDPR) • Netowrk Security & Cybersecurity Expert
+          <!-- GRC • RISK • ASSURANCE • AI GOVERNANCE -->
+        </span>
+      </div>
     </footer>
 
-
-
     <!-- =====================================================
-         EXISTING JAVASCRIPT
-         ===================================================== -->
+         JAVASCRIPT
+    ====================================================== -->
 
     <script src="script.js"></script>
-
-
-    <!-- =====================================================
-         CURRENT YEAR
-         ===================================================== -->
-
-    <script>
-
-        document.addEventListener(
-            "DOMContentLoaded",
-            function () {
-
-                const yearElement =
-                    document.getElementById("currentYear");
-
-
-                if (yearElement) {
-
-                    yearElement.textContent =
-                        new Date().getFullYear();
-
-                }
-
-            }
-        );
-
-    </script>
-
-
-</body>
-
+  </body>
 </html>
